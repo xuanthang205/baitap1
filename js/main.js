@@ -1,6 +1,6 @@
-const ovlay = document.querySelector(".header-mb .overlay");
-const menu = document.querySelector(".header-mb_area");
-const closeBtn = document.querySelector(".header-mb_area .icon_times");
+const ovlay = document.querySelector(".header .overlay");
+const menu = document.querySelector(".header_box");
+const closeBtn = document.querySelector(".header .times_btn");
 const menuBtn = document.querySelector(".header .icon_menu");
 
 // Mở menu
