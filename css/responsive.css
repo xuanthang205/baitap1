@@ -1,0 +1,131 @@
+@media (max-width: 575.98px) {
+  .mb_show {
+    display: block;
+  }
+
+  .mb_hide {
+    display: none;
+  }
+
+  .header_area {
+    justify-content: flex-start;
+    padding: 18px 32px;
+  }
+
+  .header .logo {
+    margin-left: 4px;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+
+  .header .action {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .icon_cart {
+    margin-left: 0;
+  }
+
+  .header_box {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0 20% 0 0;
+    padding: 24px;
+    background-color: aqua;
+    /* transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out; */
+  }
+
+  .header .header_box .logo {
+    margin-left: 0;
+  }
+
+  .header_box .icon_times {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+
+  .header_box .input_wrap {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    margin-top: 16px;
+    padding: 0 8px 0 16px;
+    border: 1px solid #6c7275;
+    border-radius: 6px;
+  }
+
+  .header_box .input {
+    flex: 1;
+    height: 100%;
+    padding: 0 8px;
+    font-size: 1.4rem;
+    line-height: 22px;
+    outline: none;
+  }
+
+  .header_box .input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    color: #6c7275;
+    line-height: 22px;
+  }
+
+  .header_box .icon_btn {
+    display: flex;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .nav_link {
+    display: block;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0;
+    border-bottom: 1px solid #e8ecef;
+    color: #141718;
+  }
+
+  .mb_row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 4px 0 12px;
+    border-bottom: 1px solid #e8ecef;
+  }
+
+  .header .title {
+    flex: 1;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #6c7275;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+  }
+
+  .mb_row:nth-child(5) {
+    margin-top: auto;
+  }
+  .btn_signin {
+    --height: 52px;
+    margin-top: 22px;
+    border-radius: 6px;
+    font-size: 1.8rem;
+  }
+}
+/* @media (max-width: 767.98px) { ... }
+
+@media (max-width: 991.98px) { ... }
+
+@media (max-width: 1199.98px) { ... }
+
+@media (max-width: 1399.98px) { ... } */

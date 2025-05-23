@@ -1,0 +1,242 @@
+/* .your-style {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-style: italic;
+} */
+/* 
+.your-style {
+    font-family: 'Space Grotesk';
+    font-weight: 500;
+    font-style: normal;
+} */
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  font-family: 'Inter', sans-serif;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: 0;
+  line-height: 0;
+  background: transparent;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  line-height: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* COmmon */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.inner {
+  max-width: min(1120px, 100%);
+  margin: 0 auto;
+}
+.btn {
+  --height: 46px;
+  display: inline-block;
+  text-align: center;
+  min-width: 183px;
+  height: var(--height);
+  border-radius: 8px;
+  background-color: #141718;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.025em;
+  line-height: var(--height);
+}
+.logo {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #000;
+  line-height: 100%;
+}
+.logo > .dot {
+  color: #6c7275;
+}
+
+.pc_hide {
+  display: none;
+}
+
+.button.bl {
+  display: block;
+}
+
+
+/* // Common */
+
+/* Styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.header_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 14px 0;
+}
+
+.nav_list {
+  display: flex;
+  margin-left: -20px;
+}
+
+.nav_link {
+  display: inline-block;
+  padding: 4px 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 24px;
+  color: #6c7275;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav_link:hover {
+  color: #141718;
+}
+
+.icon {
+  display: inline-block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/sp_icons.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.icon_user {
+  margin-left: 16px;
+  background-position: -22px 0px;
+}
+
+.icon_cart {
+  margin-left: 18px;
+  background-position: -44px 0px;
+}
+
+.icon_menu {
+  background-position: -66px 0px;
+}
+
+.icon_times {
+  background-position: -178px 0px;
+}
+
+.icon_liked {
+  background-position: -156px 0;
+}
+
+.icon_ig {
+  background-position: -112px 0;
+}
+.icon_fb {
+  background-position: -90px 0;
+}
+.icon_yt {
+  background-position: -134px 0;
+}
+
+.header_area .action,
+.action_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header_area .quantity {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: #141718;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 10px;
+  cursor: default;
+}
+
+.header-mb_area.is_show {
+  transform: translateX(0);
+}
+
+
+
+
+
+.header-mb .overlay {
+  visibility: hidden;
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.32);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.header-mb .overlay.is_show {
+  visibility: visible;
+  opacity: 1;
+}
