@@ -1,3 +1,6 @@
+.pc_hide {
+    display: none;
+}
 @media (max-width: 767.98px) {
     .mb_show {
         display: block;
@@ -7,43 +10,56 @@
         display: none;
     }
 
-    .header_area {
-        justify-content: flex-start;
-        max-width: 100%;
-        padding: 8px 32px 8px 22px;
-    }
-
-    .logo {
+    .header .logo {
         font-size: 1.6rem;
         line-height: 24px;
     }
 
-    .header .action {
-        flex: 1;
-        justify-content: flex-end;
+    .header_area {
+        max-width: 100%;
+        padding: 8px 32px 8px 22px;
     }
 
-    .header_box {
-        display: flex;
+    .header .menu_btn {
+        padding: 10px 4px 10px 10px;
+    }
+
+    .logo_wrap.is_show {
+        position: fixed;
+        top: 24px;
+        left: 24px;
+        z-index: 2;
+    }
+
+    .header_box.is_show {
         flex-direction: column;
+        align-items: initial;
         position: fixed;
         inset: 0 10% 0 0;
-        z-index: 1;
+        z-index: 2;
+        overflow: hidden;
         padding: 24px;
         background-color: #fff;
         transform: translateX(-100%);
-        transition: transform 0.3s ease-in-out;
     }
 
-    .header_box .times_btn {
+    .header_box.is_move {
+        transform: translateX(0);
+    }
+
+    .header_box.is_show .times_btn {
+        display: block;
         position: absolute;
-        top: 12px;
-        right: 12px;
-        padding: 12px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .header_box.is_show .input_wrap,
+    .header_box.is_show .social_list {
+        display: flex;
     }
 
     .header_box .input_wrap {
-        display: flex;
         flex-shrink: 0;
         align-items: center;
         height: 46px;
@@ -69,6 +85,24 @@
         line-height: 22px;
     }
 
+    .header_box.is_show .nav,
+    .header_box.is_show .title,
+    .header_box.is_show .btn_signin {
+        display: block;
+    }
+
+    .header_box.is_show .action_wrap {
+        flex-direction: column;
+        align-items: initial;
+        margin-top: auto;
+    }
+
+    .header_box.is_show .header_row {
+        display: flex;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e8ecef;
+    }
+
     .nav_list {
         flex-direction: column;
     }
@@ -82,20 +116,30 @@
         color: #141718;
     }
 
-    .mb_row {
-        display: flex;
-        align-items: center;
-        height: 40px;
-        padding: 4px 0 12px;
-        border-bottom: 1px solid #e8ecef;
+    .header_row + .header_row {
+        margin-top: 8px;
+    }
+    .header .times_btn {
+        padding: 8px;
     }
 
-    .mb_row:nth-child(5) {
-        margin-top: auto;
+    .header .title {
+        flex: 1;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #6c7275;
+        line-height: 32px;
+        letter-spacing: -0.4px;
+    }
+
+    .btn_signin {
+        --height: 52px;
+        margin-top: 22px;
+        border-radius: 6px;
+        font-size: 1.8rem;
     }
 
     .social_list {
-        display: flex;
         gap: 24px;
         margin-top: 20px;
     }
