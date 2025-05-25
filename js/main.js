@@ -24,3 +24,35 @@ function closeMenu() {
 
 closeBtn.addEventListener("click", closeMenu);
 overlay.addEventListener("click", closeMenu);
+
+function isMobile() {
+    return window.innerWidth <= 767.98;
+}
+
+document.querySelectorAll(".footer_area .col").forEach((col) => {
+    const title = col.querySelector(".title");
+    const list = col.querySelector(".footer_list");
+
+    if (!title || !list) return;
+
+    if (
+        title.textContent.trim() === "Page" ||
+        title.textContent.trim() === "Info"
+    ) {
+        title.addEventListener("click", () => {
+            if (isMobile()) {
+                title.classList.toggle("is_show");
+                list.classList.toggle("is_show");
+            }
+        });
+    }
+});
+
+// Reset trạng thái khi chuyển sang desktop
+window.addEventListener("resize", () => {
+    if (!isMobile()) {
+        document.querySelectorAll(".footer_list.is_show").forEach((list) => {
+            list.classList.remove("is_show");
+        });
+    }
+});
