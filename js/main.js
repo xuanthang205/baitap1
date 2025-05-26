@@ -55,7 +55,7 @@ window.addEventListener('resize', () => {
 });
 
 
-document.querySelectorAll('.blog .more').forEach((more) => {
+document.querySelectorAll('.more_btn').forEach((more) => {
   more.addEventListener('mouseenter', () => {
     const width = more.offsetWidth + 'px';
     more.style.setProperty('--after-width', width);
