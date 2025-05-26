@@ -1,4 +1,4 @@
-const closeBtn = document.querySelector('.header .times_btn');
+const closeBtn = document.querySelector('.header .close_btn');
 const overlay = document.querySelector('.header .overlay');
 const headerBox = document.querySelector('.header_box');
 

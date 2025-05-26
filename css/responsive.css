@@ -2,12 +2,22 @@
   display: none;
 }
 @media (max-width: 767.98px) {
-  .mb_show {
+  .mobile_show {
     display: block;
   }
 
-  .mb_hide {
+  .mobile_hide {
     display: none;
+  }
+
+  .logo_link{
+    align-items: center;
+    height: 24px;
+  }
+
+  .logo_img {
+    width: 70px;
+    padding-top: 4px;
   }
 
   .icon_arrow-right {
@@ -20,11 +30,6 @@
   .more_btn {
     font-size: 1.4rem;
     line-height: 1.714;
-  }
-
-  .header .logo {
-    font-size: 1.6rem;
-    line-height: 24px;
   }
 
   .header_area {
@@ -59,7 +64,7 @@
     transform: translateX(0);
   }
 
-  .header_box.is_show .times_btn {
+  .header_box.is_show .close_btn {
     display: block;
     position: absolute;
     top: 16px;
@@ -131,7 +136,7 @@
   .header_row + .header_row {
     margin-top: 8px;
   }
-  .header .times_btn {
+  .header .close_btn {
     padding: 8px;
   }
 
