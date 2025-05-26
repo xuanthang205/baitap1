@@ -313,7 +313,7 @@ body {
   max-width: 100%;
 }
 
-.blog_item .img_wrap:hover .thumb {
+.blog_item:hover .thumb {
   scale: 1.1;
 }
 
