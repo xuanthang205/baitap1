@@ -150,6 +150,10 @@ body {
   background-position: -264px -4px;
 }
 
+.icon_star{
+  background-position: -314px -2px;
+}
+
 .logo {
   font-family: Poppins, sans-serif;
   font-size: 2.4rem;
@@ -175,7 +179,7 @@ body {
   letter-spacing: -0.01em;
 }
 
-.more_btn{
+.more_btn {
   display: inline-flex;
   gap: 4px;
   align-items: center;
@@ -290,7 +294,8 @@ body {
 /* // Header styles */
 
 /* Blog */
-.blog_top {
+.blog_top,
+.product_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -332,7 +337,129 @@ body {
   color: #23262f;
   line-height: 1.4;
 }
+/* // Blog */
 
+/* Product */
+.product_top .section_heading {
+  max-width: 150px;
+}
+
+.product_top .more_btn {
+  align-self: flex-end;
+}
+.product_area {
+  margin-top: 48px;
+}
+.product_item{
+  padding-bottom: 54px;
+}
+.product_item .content {
+  position: relative;
+  overflow: hidden;
+}
+
+.product_item .content:hover .like{
+  transform: translateX(0);
+}
+
+.product_item .content:hover .add_btn{
+  transform: translate(-50%, 0);
+}
+.product_item .thumb {
+  max-width: 100%;
+}
+
+.product_item .badge_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.product_item .badge {
+  display: inline-block;
+  width: 67px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-weight: 700;
+  color: #121212;
+  line-height: 24px;
+  text-align: center;
+}
+
+.product_item .badge_sale{
+  background-color: #38cb89;
+  color: #fefefe;
+}
+
+.product_item .like{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+  transform: translateX(150%);
+  transition: transform 0.3s ease;
+}
+
+.product_item .icon_liked{
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: -130px 1px;
+}
+
+.product_item .add_btn{
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  min-width: 230px;
+  transform: translate(-50%, 135%);
+  transition: transform 0.3s ease;
+}
+
+.product_item .star_box{
+  margin-top: 12px;
+}
+
+.product_item .title{
+  margin-top: 4px;
+font-weight: 600;
+font-size: 1.6rem;
+line-height: 1.625;
+}
+
+.product_item .price_box{
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.product_item .price{
+font-weight: 600;
+font-size: 1.4rem;
+color: #141718;
+line-height: 1.57143;
+}
+
+.product_item .price_origin{
+font-weight: 400;
+color: #6C7275;
+text-decoration: line-through;
+}
+
+.product_area .swiper-scrollbar-drag{
+  background: #343839;
+}
 /* Footer styles */
 .footer {
   background-color: #000;
