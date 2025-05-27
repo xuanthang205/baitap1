@@ -1,30 +1,35 @@
+const header = document.querySelector('.header');
 const closeBtn = document.querySelector('.header .close_btn');
-const overlay = document.querySelector('.header .overlay');
-const headerBox = document.querySelector('.header_box');
+const dimmed = document.querySelector('.dimmed');
 
 document.querySelector('.header .menu_btn').addEventListener('click', () => {
-  overlay.classList.add('is_show');
-  headerBox.classList.add('is_show');
-
-  setTimeout(() => {
-    headerBox.style.transition = 'transform 0.25s ease-in-out';
-    headerBox.classList.add('is_move');
-  }, 10);
+  document.body.style.overflow = 'hidden';
+  document.querySelector('.main').style.margin = '60px 0 0 0';
+  dimmed.classList.add('is_show');
+  header.classList.add('is_show');
 });
 
 function closeMenu() {
-  headerBox.classList.remove('is_move');
+  const headerMenu = document.querySelector('.header.is_show');
+  Object.assign(headerMenu.style, {
+    transform: 'translateX(-100%)',
+    transition: 'transform 0.3s ease',
+  });
   setTimeout(() => {
-    headerBox.classList.remove('is_show');
-    overlay.classList.remove('is_show');
-    headerBox.style.removeProperty('transition');
-  }, 250);
+    header.classList.remove('is_show');
+    document.querySelector('.main').style.margin = '';
+    Object.assign(header.style, {
+      transform: 'translateX(0)',
+      transition: '',
+    });
+  }, 300);
+  dimmed.classList.remove('is_show');
 }
 
 closeBtn.addEventListener('click', closeMenu);
-overlay.addEventListener('click', closeMenu);
+dimmed.addEventListener('click', closeMenu);
 
-// Ẩn hiện footer list
+// // Ẩn hiện footer list
 function isMobile() {
   return window.innerWidth <= 767.98;
 }
@@ -45,7 +50,7 @@ document.querySelectorAll('.footer_area .col').forEach((col) => {
   }
 });
 
-// Reset trạng thái khi chuyển sang desktop
+// // Reset trạng thái khi chuyển sang desktop
 window.addEventListener('resize', () => {
   if (!isMobile()) {
     document.querySelectorAll('.footer_list.is_show').forEach((list) => {
@@ -53,7 +58,6 @@ window.addEventListener('resize', () => {
     });
   }
 });
-
 
 document.querySelectorAll('.more_btn').forEach((more) => {
   more.addEventListener('mouseenter', () => {

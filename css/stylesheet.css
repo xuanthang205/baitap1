@@ -101,6 +101,22 @@
 /* Space grotesk */
 @font-face {
     font-family: 'Space Grotesk';
+    src: url('../fonts/space-grotesk/SpaceGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'false';
+    src: url('../fonts/space-grotesk/false.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
     src: url('../fonts/space-grotesk/SpaceGrotesk-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
@@ -108,9 +124,41 @@
 }
 
 @font-face {
-    font-family: 'Space Grotesk';
-    src: url('../fonts/space-grotesk/SpaceGrotesk-Bold.woff') format('woff');
+    font-family: 'false';
+    src: url('../fonts/space-grotesk/false.woff') format('woff');
     font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'false';
+    src: url('../fonts/space-grotesk/false.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fonts/space-grotesk/false.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fonts/space-grotesk/false.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'false';
+    src: url('../fonts/space-grotesk/false.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -126,6 +174,22 @@
 @font-face {
     font-family: 'Space Grotesk';
     src: url('../fonts/space-grotesk/SpaceGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fonts/space-grotesk/false.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../fonts/space-grotesk/false.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
